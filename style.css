@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.weather-box{
+    width:420px;
+    background:#fff;
+    border-radius:20px;
+    padding:35px 30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.weather-box h1{
+    color:#0f172a;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    flex:1;
+    padding:14px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.search-box input:focus{
+    border-color:#2563eb;
+}
+
+.search-box button{
+    width:55px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#1d4ed8;
+}
+
+.weather-info h2{
+    font-size:30px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+#date{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+#weather-icon{
+    width:120px;
+    margin:10px 0;
+}
+
+#temperature{
+    font-size:48px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+#description{
+    font-size:22px;
+    text-transform:capitalize;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.detail-box{
+    flex:1;
+    background:#f3f4f6;
+    border-radius:12px;
+    padding:20px;
+    transition:.3s;
+}
+
+.detail-box:hover{
+    transform:translateY(-6px);
+}
+
+.detail-box i{
+    font-size:30px;
+    color:#2563eb;
+    margin-bottom:12px;
+}
+
+.detail-box span{
+    display:block;
+    font-size:22px;
+    font-weight:bold;
+    color:#111827;
+}
+
+.detail-box p{
+    margin-top:8px;
+    color:#666;
+}
+
+@media(max-width:480px){
+
+    .weather-box{
+        width:100%;
+        padding:25px 20px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box button{
+        width:100%;
+        height:50px;
+    }
+
+    .details{
+        flex-direction:column;
+    }
+
+    #temperature{
+        font-size:40px;
+    }
+
+    .weather-box h1{
+        font-size:30px;
+    }
+
+}
