@@ -21,10 +21,9 @@ A responsive Weather App built using **HTML, CSS, and JavaScript**. It uses the 
 - OpenWeatherMap API
 
 ## Live demo
-
-
+https://khuzema24602.github.io/weather-app/
 ## 👨‍💻 Author
 
 Khuzema Akhtar
 
-Github:
+Github:https://github.com/khuzema24602
